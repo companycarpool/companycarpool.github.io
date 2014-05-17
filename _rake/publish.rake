@@ -2,7 +2,7 @@ require 'jekyll'
 require 'tmpdir'
 
 # Change your GitHub reponame
-GITHUB_REPONAME = 'companycarpool/companycarpool.github.com'
+GITHUB_REPONAME = 'companycarpool/companycarpool.github.io'
 
 desc "Generate blog files"
 task :generate do
