@@ -1,0 +1,96 @@
+//
+// Variables
+// --------------------------------------------------
+
+$black: #000000;
+$white: #ffffff;
+
+/* Flat UI Palettes */
+$flat-ui-turquoise:     #1abc9c;
+$flat-ui-green-sea:     #16a085;
+
+$flat-ui-emerald:       #2ecc71;
+$flat-ui-nephritis:     #27ae60;
+
+$flat-ui-peter-river:   #3498db;
+$flat-ui-belize-hole:   #2980b9;
+
+$flat-ui-amethyst:      #9b59b6;
+$flat-ui-wisteria:      #8e44ad;
+
+$flat-ui-wet-asphalt:   #34495e;
+$flat-ui-midnight-blue: #2c3e50;
+
+$flat-ui-sun-flower:    #f1c40f;
+$flat-ui-orange:        #f39c12;
+
+$flat-ui-carrot:        #e67e22;
+$flat-ui-pumpkin:       #d35400;
+
+$flat-ui-alizarin:      #e74c3c;
+$flat-ui-pomegranate:   #c0392b;
+
+$flat-ui-clouds:        #ecf0f1;
+$flat-ui-silver:        #bdc3c7;
+
+$flat-ui-concrete:      #95a5a6;
+$flat-ui-asbestos:      #7f8c8d;
+
+// Brand colors
+// -------------------------
+
+$brand-primary:         $flat-ui-pomegranate;
+
+// Typography
+// -------------------------
+
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$headings-font-family: "Oswald";
+$headings-font-weight: 300;
+
+// Needed because of dependency
+$gray-dark:             lighten(#000, 20%) !default;   // #333
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
+$grid-gutter-width:     30px !default;
+
+// Navbar
+// -------------------------
+
+// Basics of a navbar
+$navbar-height:                    60px;
+$navbar-border-radius:             0;
+
+$navbar-default-bg:                $white;
+
+// Navbar links
+$navbar-default-link-color:                $link-color;
+$navbar-default-link-hover-color:          $link-hover-color;
+$navbar-default-link-hover-bg:             transparent;
+$navbar-default-link-active-color:         $gray-dark;
+$navbar-default-link-active-bg:            transparent;
+$navbar-default-link-disabled-color:       #ccc;
+$navbar-default-link-disabled-bg:          transparent;
+
+// Navbar toggle
+$navbar-default-toggle-hover-bg:           transparent;
+$navbar-default-toggle-icon-bar-bg:        $gray-dark;
+$navbar-default-toggle-border-color:       transparent;
+
+
+// Container sizes
+// --------------------------------------------------
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width));
+$container-sm:                 $container-tablet;
+
+// Medium screen / desktop
+$container-md:                 $container-tablet;
+
+// Large screen / wide desktop
+$container-lg:                 $container-tablet;
+
+@import "twbs/bootstrap/variables";
