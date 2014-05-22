@@ -1,0 +1,56 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+$navbar-height: 81px;
+
+.navbar {
+  border-bottom: 1px solid $hr-border;
+}
+
+.navbar-brand {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  max-width: 280px;
+}
+
+.oswald {
+  font-family: "Oswald";
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+@media(min-width: #{$grid-float-breakpoint}) {
+  body {
+    padding-top: $navbar-height;
+  }
+
+  .navbar {
+    height: $navbar-height;
+
+    .navbar-brand {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      max-width: 280px;
+      line-height: 34px;
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+
+    .navbar-toggle {
+      padding: 22px 13px;
+    }
+
+    .navbar-nav {
+      li + li {
+        margin-left: 15px;
+      }
+
+      > li > a {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}

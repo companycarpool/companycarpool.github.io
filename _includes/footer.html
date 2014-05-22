@@ -1,0 +1,16 @@
+<div id="footer">
+  <div class="container">
+    <footer>
+      <a href="http://diowa.com" class="pull-right">
+        <span class="diowa-logo"></span>
+      </a>
+      <ul class="list-inline list-footer">
+        {% for link in page.language_links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </footer>
+  </div>
+</div>

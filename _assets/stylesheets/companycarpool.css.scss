@@ -1,0 +1,51 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+body {
+  padding-top: $navbar-height;
+  font-weight: 300;
+}
+
+b,
+label,
+.btn {
+  font-weight: 400;
+}
+
+.btn {
+  text-transform: uppercase;
+}
+
+.companycarpool-logo,
+.companycarpool-logo-big {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  @include square(20px);
+  background-image: url(asset_path("logo.svg"));
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.diowa-logo {
+  position: relative;
+  display: inline-block;
+  top: -1px;
+  margin-right: 3px;
+  @include size(90px, 29px);
+  background-image: url(asset_path("diowa.svg"));
+  background-repeat: no-repeat;
+  background-size: 90px 29px;
+  line-height: 1px;
+}
+
+@media(min-width: #{$grid-float-breakpoint}) {
+  .companycarpool-logo-big {
+    @include square(28px);
+    background-size: 28px 28px;
+  }
+
+  .navbar .navbar-nav > li > a {
+    font-weight: 400 !important;
+  }
+}

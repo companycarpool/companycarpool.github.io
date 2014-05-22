@@ -1,17 +1,17 @@
 # Site settings
-name: Dat site title tho
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+name: "Carpooling service for companies and organizations | Company Carpool"
+title: Company Carpool
+email: info@companycarpool.com
+description: "Carpooling service for companies and organizations"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://www.companycarpool.com"
 
 # Build settings
 markdown: kramdown
 permalinks: pretty
 
 # Gems
-gems: [jekyll-assets, jekyll-minify-html, jekyll-sitemap]
+gems: ['jekyll-assets', 'jekyll-minify-html', 'jekyll-sitemap']
 
 #
 # Plugin: jekyll-assets

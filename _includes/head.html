@@ -4,21 +4,25 @@
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }}">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  {% for link in page.language_links %}
+    <link rel="alternate" href="{{ link.url | prepend: site.url }}" hreflang="{{link.lang}}" />
+  {% endfor %}
 
   {% stylesheet application %}
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700%7COswald:300" rel="stylesheet" type="text/css" media="all">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400%7COswald:300" rel="stylesheet" type="text/css" media="all">
+
+  {% include open_graph.html %}
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="144x144" href="{% asset_path apple-touch-icon.png %}">
 
   <!-- HTML5 shim IE8 support of HTML5 elements -->
   <!--[if lt IE 9]>
     <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
-
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="144x144" href="{% asset_path apple-touch-icon.png %}">
 </head>
