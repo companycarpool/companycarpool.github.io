@@ -7,12 +7,12 @@ navbar_links:
     url: '/how-it-works'
   -
     name: Contact Us
-    url: '/contacts'
+    url: '/contact'
 language_links:
   -
     lang: en
     name: English
-    url: '/contacts'
+    url: '/contact'
   -
     lang: it
     name: Italiano
@@ -25,7 +25,7 @@ language_links:
         <h1 class="oswald">Contact Us</h1>
       </div>
       <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
-        <input type="hidden" name="redirect_to" value="{{ '/contacts/thanks.html' | prepend: site.url }}">
+        <input type="hidden" name="redirect_to" value="{{ '/contact/thanks.html' | prepend: site.url }}">
         <div class="form-group">
           <label for="contact_name">Name</label>
           <input class="form-control" id="contact_name" name="contact_name" size="30" type="text" autocomplete="name" required>
