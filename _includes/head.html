@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.name }}{% endif %}</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -14,7 +14,7 @@
   {% endfor %}
 
   {% stylesheet application %}
-  <link href="//fonts.googleapis.com/css?family=Lato:300,400%7COswald:300" rel="stylesheet" type="text/css" media="all">
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400%7COswald:300" rel="stylesheet" type="text/css" media="all">
 
   {% include open_graph.html %}
 

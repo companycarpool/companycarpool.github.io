@@ -1,13 +1,7 @@
 ---
 layout: default
-title: "Contatti | Company Carpool"
-navbar_links:
-  -
-    name: Come Funziona
-    url: '/it/come-funziona'
-  -
-    name: Contatti
-    url: '/it/contatti'
+title: Contatti
+language: it
 language_links:
   -
     lang: en
@@ -22,7 +16,7 @@ language_links:
   <div class="row">
     <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
       <div class="page-header">
-        <h1 class="oswald">Contatti</h1>
+        <h1 class="oswald">{{page.title}}</h1>
       </div>
       <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
         <input type="hidden" name="redirect_to" value="{{ '/it/contatti/grazie.html' | prepend: site.url }}">

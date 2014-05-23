@@ -14,6 +14,7 @@ label,
 
 .btn {
   text-transform: uppercase;
+  @include transition(background-color .35s ease, border-color .35s ease);
 }
 
 .companycarpool-logo,
@@ -41,6 +42,7 @@ label,
 
 @media(min-width: #{$grid-float-breakpoint}) {
   .companycarpool-logo-big {
+    top: 2px;
     @include square(28px);
     background-size: 28px 28px;
   }

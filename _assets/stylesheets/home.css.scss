@@ -5,19 +5,15 @@
   padding: 40px 20px;
   margin-bottom: 30px;
   border-radius: 0;
-  background: $flat-ui-green-sea;
-  .lead {
-    font-size: ceil($font-size-base * 1.25);
-  }
+  color: $white;
+  @include gradient-vertical($flat-ui-green-sea, darken($flat-ui-green-sea, 5%), 50%);
+  font-family: "Oswald";
+  font-weight: 300;
   h1,
   h2,
-  h3,
-  .head {
+  h3 {
     margin: 0;
     line-height: 1;
-    font-family: "Oswald";
-    font-weight: 300;
-    color: $white;
     text-transform: uppercase;
     letter-spacing: -1px;
   }
@@ -36,6 +32,12 @@
   }
   p.head {
     font-size: ceil($font-size-base * 2.7);
+  }
+}
+
+.home-buttons {
+  .btn {
+    margin-bottom: 20px;
   }
 }
 

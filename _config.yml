@@ -6,6 +6,24 @@ description: "Carpooling service for companies and organizations"
 baseurl: ""
 url: "http://www.companycarpool.com"
 
+# Custom settings
+google_analytics_tracking_code: UA-42088973-1
+navbar_links:
+  en:
+    -
+      name: How It Works
+      url: '/how-it-works'
+    -
+      name: Contact Us
+      url: '/contact'
+  it:
+    -
+      name: Come Funziona
+      url: '/it/come-funziona'
+    -
+      name: Contatti
+      url: '/it/contatti'
+
 # Build settings
 markdown: kramdown
 permalinks: pretty
