@@ -30,9 +30,6 @@
     font-size: ceil($font-size-base * 1.7);
     letter-spacing: 0;
   }
-  p.head {
-    font-size: ceil($font-size-base * 2.7);
-  }
 }
 
 .home-buttons {
@@ -103,6 +100,18 @@
   }
 }
 
+@media (min-width: #{$screen-sm-min}) {
+  #home-jumbotron {
+    padding: 80px 20px;
+    h1 {
+      font-size: ceil($font-size-base * 4.7);
+    }
+    h2 {
+      font-size: ceil($font-size-base * 2.25);
+    }
+  }
+}
+
 @media (min-width: #{$screen-md-min}) {
   #home-jumbotron {
     padding: 80px 20px;
@@ -117,6 +126,7 @@
   h1.oswald {
     font-size: ceil($font-size-base * 3.25);
   }
+
   .featurette {
     padding-top: 120px;
     overflow: hidden;
