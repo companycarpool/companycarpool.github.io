@@ -12,17 +12,17 @@ navbar_links:
   en:
     -
       name: How It Works
-      url: '/how-it-works'
+      url: '/en/how-it-works'
     -
       name: Contact Us
-      url: '/contact'
+      url: '/en/contact'
   it:
     -
       name: Come Funziona
-      url: '/it/come-funziona'
+      url: '/come-funziona'
     -
       name: Contatti
-      url: '/it/contatti'
+      url: '/contatti'
 
 # Build settings
 markdown: kramdown

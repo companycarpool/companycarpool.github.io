@@ -1,16 +1,16 @@
 ---
 layout: default
-title: Contatti
-language: it
+title: Contact Us
+language: en
 language_links:
   -
     lang: en
     name: English
-    url: '/contact'
+    url: '/en/contact'
   -
     lang: it
     name: Italiano
-    url: '/it/contatti'
+    url: '/contatti'
 ---
 <div id="main-container" class="container">
   <div class="row">
@@ -19,29 +19,29 @@ language_links:
         <h1 class="oswald">{{page.title}}</h1>
       </div>
       <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
-        <input type="hidden" name="redirect_to" value="{{ '/it/contatti/grazie.html' | prepend: site.url }}">
+        <input type="hidden" name="redirect_to" value="{{ '/contact/thanks.html' | prepend: site.url }}">
         <div class="form-group">
-          <label for="contact_name">Nome</label>
+          <label for="contact_name">Name</label>
           <input class="form-control" id="contact_name" name="contact_name" size="30" type="text" autocomplete="name" required>
         </div>
         <div class="form-group">
-          <label for="contact_organization">Azienda / Ente</label>
+          <label for="contact_organization">Organization</label>
           <input class="form-control" id="contact_organization" name="contact_organization" size="30" type="text" autocomplete="company" required>
         </div>
         <div class="form-group">
-          <label for="contact_email">Indirizzo e-mail</label>
+          <label for="contact_email">Email address</label>
           <input class="form-control" id="contact_email" name="contact_email" type="email" autocomplete="email" required>
         </div>
         <div class="form-group">
-          <label for="contact_phone">Telefono (opzionale)</label>
+          <label for="contact_phone">Phone (optional)</label>
           <input class="form-control" id="contact_phone" name="contact_phone" type="phone" autocomplete="phone">
         </div>
         <div class="form-group">
-          <label for="contact_message">Ha domande a cui possiamo rispondere? (opzionale)</label>
+          <label for="contact_message">Do you have any questions we can answer? (optional)</label>
           <textarea class="form-control" id="contact_message" name="contact_message" rows="5" maxlength="1000"></textarea>
         </div>
         <div class="form-group">
-          <button class="btn btn-primary pull-right" name="button" type="submit">Invia</button>
+          <button class="btn btn-primary pull-right" name="button" type="submit">Send</button>
         </div>
       </form>
     </div>
