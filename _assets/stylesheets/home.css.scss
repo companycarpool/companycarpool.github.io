@@ -10,23 +10,27 @@
   font-family: "Oswald";
   font-weight: 300;
   h1,
-  h2,
-  h3 {
+  h2 {
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: -1px;
   }
   h1 {
+    font-size: ceil($font-size-base * 1.25);
+    letter-spacing: 1px;
+  }
+  .header-dashed {
     display: inline-block;
-    margin: 0 0 10px;
-    /*border-top: 1px dashed $white */
+    margin: 10px 0;
+    border-top: 1px dashed $white;
     border-bottom: 1px dashed $white;
-    padding: 0 0 10px;
+    padding: 5px 0 10px;
     line-height: 1.1;
     font-size: ceil($font-size-base * 3.25);
   }
-  h2 {
+  .header-small {
+    display: block;
     font-size: ceil($font-size-base * 1.7);
     letter-spacing: 0;
   }
@@ -104,9 +108,12 @@
   #home-jumbotron {
     padding: 80px 20px;
     h1 {
+      font-size: ceil($font-size-base * 1.75);
+    }
+    .header-dashed {
       font-size: ceil($font-size-base * 4.7);
     }
-    h2 {
+    .header-small {
       font-size: ceil($font-size-base * 2.25);
     }
   }
@@ -116,9 +123,12 @@
   #home-jumbotron {
     padding: 80px 20px;
     h1 {
+      font-size: ceil($font-size-base * 2.75);
+    }
+    .header-dashed {
       font-size: ceil($font-size-base * 5.7);
     }
-    h2 {
+    .header-small {
       font-size: ceil($font-size-base * 3.25);
     }
   }
