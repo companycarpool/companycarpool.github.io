@@ -1,6 +1,6 @@
 # Site settings
-name: "Carpooling service for companies and organizations | Company Carpool"
-title: Company Carpool
+name: Company Carpool
+title: "Carpooling service for companies and organizations | Company Carpool"
 email: info@companycarpool.com
 description: "Carpooling service for companies and organizations"
 baseurl: ""

@@ -1,4 +1,4 @@
-<meta content="{{ site.title }}" property="og:site_name">
+<meta content="{{ site.name }}" property="og:site_name">
 <meta content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" property="og:title">
 <meta content="{% if page.title %}article{% else %}website{% endif %}" property="og:type">
 <meta content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" property="og:description">
@@ -18,7 +18,7 @@
 {% if page.image %}
 <meta content="{{ page.image | asset_path }}" property="og:image">
 {% else %}
-<meta content="{{ 'company_carpool.jpg' | asset_path }}" property="og:image">
+<meta content="{{ 'company-carpool.jpg' | asset_path }}" property="og:image">
 {% endif %}
 
 {% if page.categories %}

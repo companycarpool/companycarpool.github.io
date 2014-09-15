@@ -1,6 +1,10 @@
 <head>
   <meta charset="utf-8">
-  <title>{% if page.title %}{{ page.title | append: ' | ' }}{{ site.title }}{% else %}{{ site.name }}{% endif %}</title>
+  {% if page.homepage %}
+  <title>{{ page.title }}</title>
+  {% else %}
+  <title>{% if page.title %}{{ page.title | append: ' | ' }}{{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
+  {% endif %}
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
