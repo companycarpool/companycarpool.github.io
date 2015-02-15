@@ -8,11 +8,19 @@ url: "http://www.companycarpool.com"
 
 # Custom settings
 google_analytics_tracking_code: UA-42088973-1
-root_paths:
-  en: '/'
-  it: '/it'
-  es: '/es'
-  fr: '/fr'
+languages:
+  en:
+    name: English
+    root_path: '/'
+  it:
+    name: Italiano
+    root_path: '/it'
+  es:
+    name: Español
+    root_path: '/es'
+  fr:
+    name: Française
+    root_path: '/fr'
 
 navbar_links:
   en:

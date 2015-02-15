@@ -41,15 +41,21 @@ $navbar-height: 81px;
     }
 
     .navbar-nav {
-      li + li {
-        margin-left: 15px;
-      }
+      > li {
+        > a {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
 
-      > li > a {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        font-weight: bold;
+        > .dropdown-menu {
+          margin-top: -15px;
+        }
+
+        & + li {
+          margin-left: 15px;
+        }
       }
     }
   }
