@@ -1,16 +1,24 @@
 ---
 layout: default
 title: Contatti
-language: it
+language: es
 language_links:
   -
     lang: en
     name: English
-    url: '/en/contact'
+    url: '/contact'
   -
     lang: it
     name: Italiano
-    url: '/contatti'
+    url: '/it/contatti'
+  -
+    lang: es
+    name: Español
+    url: '/es/contactenos'
+  -
+    lang: fr
+    name: Française
+    url: '/fr/contact'
 ---
 <div id="main-container" class="container">
   <div class="row">
@@ -19,7 +27,7 @@ language_links:
         <h1 class="oswald">{{page.title}}</h1>
       </div>
       <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
-        <input type="hidden" name="redirect_to" value="{{ '/it/contatti/grazie.html' | prepend: site.url }}">
+        <input type="hidden" name="redirect_to" value="{{ '/es/contactenos/gracias.html' | prepend: site.url }}">
         <div class="form-group">
           <label for="contact_name">Nome</label>
           <input class="form-control" id="contact_name" name="contact_name" size="30" type="text" autocomplete="name" required>
