@@ -19,7 +19,7 @@ languages:
     name: Español
     root_path: '/es'
   fr:
-    name: Française
+    name: Français
     root_path: '/fr'
 
 navbar_links:
