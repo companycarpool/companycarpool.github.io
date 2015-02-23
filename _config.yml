@@ -7,7 +7,7 @@ baseurl: ""
 url: "http://www.companycarpool.com"
 
 # Custom settings
-google_analytics_tracking_code: UA-42088973-1
+google_analytics_tracking_code: UA-42088973-2
 languages:
   en:
     name: English
