@@ -14,7 +14,7 @@ languages:
   it: Italiano
   es: Español
   fr: Français
-  pt: Português (do Brasil)
+  pt: Português
   ru: Русский
 
 localized_pages:
@@ -57,7 +57,7 @@ localized_pages:
       url: '/pt/como-funciona'
     -
       language: ru
-      url: '/ru/como-funciona'
+      url: '/ru/как-это-работает'
 
   contact:
     -
@@ -74,10 +74,10 @@ localized_pages:
       url: '/fr/contact'
     -
       language: pt
-      url: '/pt/contact'
+      url: '/pt/contatos'
     -
       language: ru
-      url: '/ru/contact'
+      url: '/ru/связи'
 
 navbar_links:
   en:
@@ -117,11 +117,11 @@ navbar_links:
       url: '/pt/contatos'
   ru:
     -
-      name: Como funciona
-      url: '/ru/como-funciona'
+      name: Как это работает
+      url: '/ru/как-это-работает'
     -
-      name: Contatos
-      url: '/ru/contatos'
+      name: Связи
+      url: '/ru/связи'
 
 # Build settings
 markdown: kramdown
