@@ -30,8 +30,15 @@ localized_name: root
       <p>Moins de véhicules sur la route signifie moins d’émissions de Co<sub>2</sub>. Une contribution tangible pour l’environnement qui boostera votre image de marque.</p>
     </div>
   </div>
+</div>
 
-  <div class="featurette-text-divider">Pourquoi est-il différent?</div>
+<div class="featurette-text-divider">
+  <div class="container">
+    <h4>Pourquoi est-il différent?</h4>
+  </div>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
       <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
@@ -49,13 +56,62 @@ localized_name: root
       <p>En partageant les routes des employés de toutes les entreprises qui utilisent notre service, les possibilités de former des covoiturages augmentent significativement. Ceci représente un grand avantage par rapport aux plateformes fermées.</p>
     </div>
   </div>
+</div>
 
-  <div class="row home-buttons">
-    <div class="col-sm-6">
-      <a href="/fr/mode-de-fonctionnement" class="btn btn-default btn-lg btn-block">Mode de fonctionnement</a>
+<div class="featurette-text-divider">
+  <a class="anchor" id="how-it-works"></a>
+  <div class="container">
+    <h4>Mode de fonctionnement</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 small-featurette">
+      <img alt="Set up daily route" src="{{'how-it-works-1.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>1. Fixer une route quotidienne</h3>
+      <p>Remplissez l’adresse de départ, l’adresse du lieu de travail et l’horaire de travail. Pas de formes complexes.</p>
     </div>
-    <div class="col-sm-6">
-      <a href="/fr/contact" class="btn btn-primary btn-lg btn-block">Contact</a>
+    <div class="col-sm-6 small-featurette">
+      <img alt="Set up daily route" src="{{'how-it-works-2.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>2. Voir les résultats</h3>
+      <p>L’adresse mail et le numéro de téléphone facultatif permettent aux employés de se contacter.</p>
+    </div>
+  </div>
+</div>
+
+<div class="featurette-text-divider">
+  <a class="anchor" id="free-trial"></a>
+  <div class="container">
+    <h4>Essai gratuit</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+      <p class="lead">
+        Try out our carpooling app <strong>for free</strong>!
+        <br>
+        <small>
+          No credit card required, no obligations. Just fill out the form below and we will get in touch!
+        </small>
+      </p>
+
+      <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
+        <input type="hidden" name="redirect_to" value="{{ '/fr/merci.html' | prepend: site.url }}">
+        <div class="form-group">
+          <label for="contact_email">Adresse email</label>
+          <input class="form-control input-lg" id="contact_email" name="contact_email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_organization">Organisation</label>
+          <input class="form-control input-lg" id="contact_organization" name="contact_organization" size="30" type="text" autocomplete="company" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-lg btn-primary" name="button" type="submit">Request Free Trial</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
