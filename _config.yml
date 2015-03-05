@@ -14,6 +14,8 @@ languages:
   it: Italiano
   es: Español
   fr: Français
+  pt: Português (do Brasil)
+  ru: Русский
 
 localized_pages:
   root:
@@ -29,6 +31,12 @@ localized_pages:
     -
       language: fr
       url: '/fr'
+    -
+      language: pt
+      url: '/pt'
+    -
+      language: ru
+      url: '/ru'
 
   how-it-works:
     -
@@ -44,6 +52,12 @@ localized_pages:
     -
       language: fr
       url: '/fr/mode-de-fonctionnement'
+    -
+      language: pt
+      url: '/pt/como-funciona'
+    -
+      language: ru
+      url: '/ru/como-funciona'
 
   contact:
     -
@@ -58,6 +72,12 @@ localized_pages:
     -
       language: fr
       url: '/fr/contact'
+    -
+      language: pt
+      url: '/pt/contact'
+    -
+      language: ru
+      url: '/ru/contact'
 
 navbar_links:
   en:
@@ -88,6 +108,20 @@ navbar_links:
     -
       name: Contact
       url: '/fr/contact'
+  pt:
+    -
+      name: Como funciona
+      url: '/pt/como-funciona'
+    -
+      name: Contatos
+      url: '/pt/contatos'
+  ru:
+    -
+      name: Como funciona
+      url: '/ru/como-funciona'
+    -
+      name: Contatos
+      url: '/ru/contatos'
 
 # Build settings
 markdown: kramdown
