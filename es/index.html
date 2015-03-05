@@ -30,8 +30,15 @@ localized_name: root
       <p>Menor cantidad de vehículos en movimiento significa menos emisiones de Co<sub>2</sub>. Una ayuda tangible para el medio ambiente que mejorará la imagen de su empresa.</p>
     </div>
   </div>
+</div>
 
-  <div class="featurette-text-divider">¿Por qué es diferente?</div>
+<div class="featurette-text-divider">
+  <div class="container">
+    <h4>¿Por qué es diferente?</h4>
+  </div>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
       <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
@@ -49,13 +56,62 @@ localized_name: root
       <p>Al compartir las rutas de los empleados con todas las empresas que utilizan nuestro servicio, aumentan las posibilidades de formar grupos de carpooling. Esta es una gran ventaja con respecto a las plataformas cerradas.</p>
     </div>
   </div>
+</div>
 
-  <div class="row home-buttons">
-    <div class="col-sm-6">
-      <a href="/es/como-funciona" class="btn btn-default btn-lg btn-block">Cómo funciona</a>
+<div class="featurette-text-divider">
+  <a class="anchor" id="how-it-works"></a>
+  <div class="container">
+    <h4>Cómo funciona</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 small-featurette">
+      <img alt="Establecer ruta diaria" src="{{'how-it-works-1.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>1. Establecer ruta diaria</h3>
+      <p>Ingresar dirección de inicio, dirección de trabajo y horario de trabajo. Evitar formatos complejos.</p>
     </div>
-    <div class="col-sm-6">
-      <a href="/es/contactenos" class="btn btn-primary btn-lg btn-block">Contáctenos</a>
+    <div class="col-sm-6 small-featurette">
+      <img alt="Buscar coincidencias" src="{{'how-it-works-2.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>2. Buscar coincidencias</h3>
+      <p>La dirección de correo electrónico y el número de teléfono opcional les permite a los empleados estar en contacto.</p>
+    </div>
+  </div>
+</div>
+
+<div class="featurette-text-divider">
+  <a class="anchor" id="free-trial"></a>
+  <div class="container">
+    <h4>Prueba gratuita</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+      <p class="lead">
+        Try out our carpooling app <strong>for free</strong>!
+        <br>
+        <small>
+          No credit card required, no obligations. Just fill out the form below and we will get in touch!
+        </small>
+      </p>
+
+      <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
+        <input type="hidden" name="redirect_to" value="{{ '/es/gracias.html' | prepend: site.url }}">
+        <div class="form-group">
+          <label for="contact_email">Dirección de correo electrónico</label>
+          <input class="form-control input-lg" id="contact_email" name="contact_email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_organization">Empresa</label>
+          <input class="form-control input-lg" id="contact_organization" name="contact_organization" size="30" type="text" autocomplete="company" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-lg btn-primary" name="button" type="submit">Request Prueba Gratuita</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
