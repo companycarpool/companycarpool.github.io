@@ -13,8 +13,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-  {% for link in page.language_links %}
-    <link rel="alternate" href="{{ link.url | prepend: site.url }}" hreflang="{{link.lang}}" />
+  {% for localized_page in site.localized_pages[page.localized_name] %}
+    <link rel="alternate" href="{{ localized_page.url | prepend: site.url }}" hreflang="{{localized_page.language}}" />
   {% endfor %}
 
   {% stylesheet application %}

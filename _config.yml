@@ -8,19 +8,56 @@ url: "http://www.companycarpool.com"
 
 # Custom settings
 google_analytics_tracking_code: UA-42088973-2
+
 languages:
-  en:
-    name: English
-    root_path: '/'
-  it:
-    name: Italiano
-    root_path: '/it'
-  es:
-    name: Español
-    root_path: '/es'
-  fr:
-    name: Français
-    root_path: '/fr'
+  en: English
+  it: Italiano
+  es: Español
+  fr: Français
+
+localized_pages:
+  root:
+    -
+      language: en
+      url: '/'
+    -
+      language: it
+      url: '/it'
+    -
+      language: es
+      url: '/es'
+    -
+      language: fr
+      url: '/fr'
+
+  how-it-works:
+    -
+      language: en
+      title: Test
+      url: '/how-it-works'
+    -
+      language: it
+      url: '/it/come-funziona'
+    -
+      language: es
+      url: '/es/como-funciona'
+    -
+      language: fr
+      url: '/fr/mode-de-fonctionnement'
+
+  contact:
+    -
+      language: en
+      url: '/contact'
+    -
+      language: it
+      url: '/it/contatti'
+    -
+      language: es
+      url: '/es/contactenos'
+    -
+      language: fr
+      url: '/fr/contact'
 
 navbar_links:
   en:

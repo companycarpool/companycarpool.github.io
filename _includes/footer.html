@@ -5,9 +5,9 @@
         <span class="diowa-logo"></span>
       </a>
       <ul class="list-inline list-footer">
-        {% for link in page.language_links %}
+        {% for localized_page in site.localized_pages[page.localized_name] %}
           <li>
-            <a href="{{ link.url }}">{{ link.name }}</a>
+            <a href="{{ localized_page.url }}">{{ site.languages[localized_page.language] }}</a>
           </li>
         {% endfor %}
       </ul>
