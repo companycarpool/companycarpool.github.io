@@ -24,19 +24,19 @@ localized_pages:
       url: '/'
     -
       language: it
-      url: '/it'
+      url: '/it/'
     -
       language: es
-      url: '/es'
+      url: '/es/'
     -
       language: fr
-      url: '/fr'
+      url: '/fr/'
     -
       language: pt
-      url: '/pt'
+      url: '/pt/'
     -
       language: ru
-      url: '/ru'
+      url: '/ru/'
 
 navbar_links:
   en:
