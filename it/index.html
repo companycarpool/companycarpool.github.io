@@ -30,8 +30,15 @@ localized_name: root
       <p>Meno automobili significa meno emissioni di Co<sub>2</sub>. Aiuto concreto all'ambiente e ritorno d'immagine aziendale.</p>
     </div>
   </div>
+</div>
 
-  <div class="featurette-text-divider">Perché è differente?</div>
+<div class="featurette-text-divider">
+  <div class="container">
+    <h4>Perché è differente?</h4>
+  </div>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
       <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
@@ -49,13 +56,62 @@ localized_name: root
       <p>Condividendo gli itinerari dei dipendenti tra tutte le imprese che utilizzano il nostro servizio, le possibilità di formare equipaggi aumentano notevolmente.</p>
     </div>
   </div>
+</div>
 
-  <div class="row home-buttons">
-    <div class="col-sm-6">
-      <a href="/it/come-funziona" class="btn btn-default btn-lg btn-block">Come Funziona</a>
+<div class="featurette-text-divider">
+  <a class="anchor" id="how-it-works"></a>
+  <div class="container">
+    <h4>Come Funziona</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 small-featurette">
+      <img alt="Crea il percorso quotidiano" src="{{'how-it-works-1.it-IT.png' | asset_path}}" class="howitworks-image">
+      <h2>1. Crea il percorso quotidiano</h2>
+      <p>Inserisci l'indirizzo di casa, l'indirizzo di lavoro e l'orario lavorativo.</p>
     </div>
-    <div class="col-sm-6">
-      <a href="/it/contatti" class="btn btn-primary btn-lg btn-block">Contatti</a>
+    <div class="col-sm-6 small-featurette">
+    <img alt="Guarda i risultati" src="{{'how-it-works-2.it-IT.png' | asset_path}}" class="howitworks-image">
+    <h2>2. Guarda i risultati</h2>
+    <p>L'indirizzo e-mail e un numero di telefono opzionale permettono ai dipendenti di accordarsi.</p>
+    </div>
+  </div>
+</div>
+
+<div class="featurette-text-divider">
+  <a class="anchor" id="free-trial"></a>
+  <div class="container">
+    <h4>Prova Gratuita</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+      <p class="lead">
+        Prova la nostra app di carpooling <strong>gratuitamente</strong>!
+        <br>
+        <small>
+          Non è richesta carta di credito. Riempi la form e ti contatteremo!
+        </small>
+      </p>
+
+      <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
+        <input type="hidden" name="redirect_to" value="{{ '/it/grazie.html' | prepend: site.url }}">
+        <div class="form-group">
+          <label for="contact_email">Indirizzo e-mail</label>
+          <input class="form-control input-lg" id="contact_email" name="contact_email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_organization">Organizazzione</label>
+          <input class="form-control input-lg" id="contact_organization" name="contact_organization" size="30" type="text" autocomplete="company" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-lg btn-primary" name="button" type="submit">Richiedi Prova Gratuita</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
