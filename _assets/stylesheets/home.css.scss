@@ -7,7 +7,7 @@
   border-radius: 0;
   color: $white;
   @include gradient-vertical($flat-ui-green-sea, darken($flat-ui-green-sea, 5%), 50%);
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-weight: 300;
 
   h1,
@@ -99,7 +99,7 @@
   h4 {
     margin: 20px 0;
     font-size: ceil($font-size-base * 2.7);
-    font-family: Oswald;
+    font-family: $font-family-oswald;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
