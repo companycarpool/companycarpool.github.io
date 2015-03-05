@@ -6,7 +6,7 @@ description: "Carpooling service for companies and organizations"
 language: en
 localized_name: root
 ---
-<div id="home-jumbotron">
+<div class="home-jumbotron">
   <div class="container">
     <div class="text-center">
       <h1>Company Carpool</h1>
@@ -17,7 +17,7 @@ localized_name: root
     </div>
   </div>
 </div>
-<div id="main-container" class="container">
+<div class="container">
   <div class="row">
     <div class="col-sm-6 small-featurette">
       <img src="{{'carpooling.jpg' | asset_path}}" class="img-responsive center-block" alt="Carpooling">
@@ -30,8 +30,15 @@ localized_name: root
       <p>Less moving vehicles means less Co<sub>2</sub> emissions. A tangible help to the environment that will boost your brand image.</p>
     </div>
   </div>
+</div>
 
-  <div class="featurette-text-divider">Why is it different?</div>
+<div class="featurette-text-divider">
+  <div class="container">
+    <h4>Why is it different?</h4>
+  </div>
+</div>
+
+<div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
       <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
@@ -49,13 +56,62 @@ localized_name: root
       <p>By sharing employees' routes among all the companies using our service, chances of forming carpools highly increase. A big advantage over closed platforms.</p>
     </div>
   </div>
+</div>
 
-  <div class="row home-buttons">
-    <div class="col-sm-6">
-      <a href="/how-it-works" class="btn btn-default btn-lg btn-block">How It Works</a>
+<div class="featurette-text-divider">
+  <a class="anchor" id="how-it-works"></a>
+  <div class="container">
+    <h4>How it works?</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 small-featurette">
+      <img alt="Set up daily route" src="{{'how-it-works-1.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>1. Set up daily route</h3>
+      <p>Fill in start address, work address and working time. No complex forms.</p>
     </div>
-    <div class="col-sm-6">
-      <a href="/contact" class="btn btn-primary btn-lg btn-block">Contact Us</a>
+    <div class="col-sm-6 small-featurette">
+      <img alt="Set up daily route" src="{{'how-it-works-2.en-US.png' | asset_path}}" class="howitworks-image">
+      <h3>2. Look up matches</h3>
+      <p>Email address and an optional phone number allows employees to contact each other.</p>
+    </div>
+  </div>
+</div>
+
+<div class="featurette-text-divider">
+  <a class="anchor" id="free-trial"></a>
+  <div class="container">
+    <h4>Free Trial</h4>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+      <p class="lead">
+        Try out our carpooling app <strong>for free</strong>!
+        <br>
+        <small>
+          No credit card required, no obligations. Just fill out the form below and we will get in touch!
+        </small>
+      </p>
+
+      <form action="http://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
+        <input type="hidden" name="redirect_to" value="{{ '/thanks.html' | prepend: site.url }}">
+        <div class="form-group">
+          <label for="contact_email">Email address</label>
+          <input class="form-control input-lg" id="contact_email" name="contact_email" type="email" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="contact_organization">Organization</label>
+          <input class="form-control input-lg" id="contact_organization" name="contact_organization" size="30" type="text" autocomplete="company" required>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-block btn-lg btn-primary" name="button" type="submit">Request Free Trial</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>

@@ -41,6 +41,13 @@ label,
   line-height: 1px;
 }
 
+.anchor {
+  position: relative;
+  display: block;
+  top: -$navbar-height;
+  visibility: hidden;
+}
+
 @media(min-width: #{$grid-float-breakpoint}) {
   .companycarpool-logo-big {
     top: 2px;

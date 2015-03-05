@@ -14,22 +14,19 @@
     <div class="navbar-collapse collapse" id="navbar-responsive-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ site.languages[page.language] }} <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          {% for localized_page in site.localized_pages[page.localized_name] %}
-            {% if page.language != localized_page.language %}
-              <li>
-                <a href="{{ localized_page.url }}">{{ site.languages[localized_page.language] }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      </li>
-      {% for link in site.navbar_links[page.language] %}
-        <li>
-          <a href="{{ link.url }}">{{ link.name }}</a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ site.languages[page.language] }} <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            {% for localized_page in site.localized_pages[page.localized_name] %}
+              {% if page.language != localized_page.language %}
+                <li>
+                  <a href="{{ localized_page.url }}">{{ site.languages[localized_page.language] }}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
         </li>
-      {% endfor %}
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#free-trial">Free trial</a></li>
       </ul>
     </div>
   </div>

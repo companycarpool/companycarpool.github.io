@@ -59,4 +59,8 @@ $navbar-height: 81px;
       }
     }
   }
+
+  .anchor {
+    top: -($navbar-height);
+  }
 }

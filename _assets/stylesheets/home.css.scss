@@ -1,7 +1,7 @@
 @import "twbs-variables";
 @import "twbs/bootstrap/mixins";
 
-#home-jumbotron {
+.home-jumbotron {
   padding: 40px 20px;
   margin-bottom: 30px;
   border-radius: 0;
@@ -9,6 +9,7 @@
   @include gradient-vertical($flat-ui-green-sea, darken($flat-ui-green-sea, 5%), 50%);
   font-family: "Oswald";
   font-weight: 300;
+
   h1,
   h2 {
     margin: 0;
@@ -16,10 +17,12 @@
     text-transform: uppercase;
     letter-spacing: -1px;
   }
+
   h1 {
     font-size: ceil($font-size-base * 1.25);
     letter-spacing: 1px;
   }
+
   .header-dashed {
     display: inline-block;
     margin: 10px 0;
@@ -29,6 +32,7 @@
     line-height: 1.1;
     font-size: ceil($font-size-base * 3.25);
   }
+
   .header-small {
     display: block;
     font-size: ceil($font-size-base * 1.7);
@@ -36,22 +40,19 @@
   }
 }
 
-.home-buttons {
-  .btn {
-    margin-bottom: 20px;
-  }
-}
-
 .small-featurette {
   margin-bottom: 40px;
+
   h3 {
     letter-spacing: -1px;
   }
+
   p {
     font-size: 16px;
   }
+
   .img-responsive {
-    @include square(60%);
+    @include square(70%);
     max-width: 300px;
     max-height: 300px;
   }
@@ -74,6 +75,7 @@
 
 .featurette-image {
   max-width: 40%;
+
   &.pull-left,
   &.pull-right {
     display: block;
@@ -84,35 +86,45 @@
 
 .howitworks-image {
   max-width: 100%;
+  @include center-block;
   padding: 4px;
   border: 1px solid $thumbnail-border;
   border-radius: $thumbnail-border-radius;
 }
 
 .featurette-text-divider {
-  margin-bottom: 40px;
-  font-size: ceil($font-size-base * 2.7);
-  font-family: Oswald;
-  font-weight: 300;
-  text-align: center;
-  text-transform: uppercase;
+  margin-bottom: $line-height-computed;
+  background-color: $flat-ui-belize-hole;
+
+  h4 {
+    margin: 20px 0;
+    font-size: ceil($font-size-base * 2.7);
+    font-family: Oswald;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+  }
 }
 
 @media(min-width: #{$grid-float-breakpoint}) {
-  #home-jumbotron {
+  .home-jumbotron {
     padding: 60px 20px;
   }
 }
 
 @media (min-width: #{$screen-sm-min}) {
-  #home-jumbotron {
+  .home-jumbotron {
     padding: 80px 20px;
+
     h1 {
       font-size: ceil($font-size-base * 1.75);
     }
+
     .header-dashed {
       font-size: ceil($font-size-base * 4.7);
     }
+
     .header-small {
       font-size: ceil($font-size-base * 2.25);
     }
@@ -120,14 +132,17 @@
 }
 
 @media (min-width: #{$screen-md-min}) {
-  #home-jumbotron {
+  .home-jumbotron {
     padding: 80px 20px;
+
     h1 {
       font-size: ceil($font-size-base * 2.75);
     }
+
     .header-dashed {
       font-size: ceil($font-size-base * 5.7);
     }
+
     .header-small {
       font-size: ceil($font-size-base * 3.25);
     }
@@ -149,26 +164,29 @@
       font-size: $font-size-base * 1.5;
     }
   }
+
   .featurette-image {
     max-width: 34%;
+
     &.pull-left,
     &.pull-right {
       margin-top: -120px;
     }
+
     &.pull-left {
       float: left !important;
       margin-right: 40px;
     }
+
     &.pull-right {
       float: right !important;
       margin-left: 40px;
     }
   }
-  .featurette-text-divider {
-    font-size: ceil($font-size-base * 3.25);
-  }
 
-  .howitworks-image {
-    max-width: 45%;
+  .featurette-text-divider {
+    h4 {
+      font-size: ceil($font-size-base * 3.25);
+    }
   }
 }
