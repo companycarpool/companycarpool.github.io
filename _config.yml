@@ -38,90 +38,25 @@ localized_pages:
       language: ru
       url: '/ru'
 
-  how-it-works:
-    -
-      language: en
-      title: Test
-      url: '/how-it-works'
-    -
-      language: it
-      url: '/it/come-funziona'
-    -
-      language: es
-      url: '/es/como-funciona'
-    -
-      language: fr
-      url: '/fr/mode-de-fonctionnement'
-    -
-      language: pt
-      url: '/pt/como-funciona'
-    -
-      language: ru
-      url: '/ru/как-это-работает'
-
-  contact:
-    -
-      language: en
-      url: '/contact'
-    -
-      language: it
-      url: '/it/contatti'
-    -
-      language: es
-      url: '/es/contactenos'
-    -
-      language: fr
-      url: '/fr/contact'
-    -
-      language: pt
-      url: '/pt/contatos'
-    -
-      language: ru
-      url: '/ru/связи'
-
 navbar_links:
   en:
-    -
-      name: How It Works
-      url: '/how-it-works'
-    -
-      name: Contact Us
-      url: '/contact'
+    how-it-works: How It Works
+    free-trial: Free Trial
   it:
-    -
-      name: Come Funziona
-      url: '/it/come-funziona'
-    -
-      name: Contatti
-      url: '/it/contatti'
+    how-it-works: Come Funziona
+    free-trial: Prova gratuita
   es:
-    -
-      name: Cómo funciona
-      url: '/es/como-funciona'
-    -
-      name: Contáctenos
-      url: '/es/contactenos'
+    how-it-works: Cómo funciona
+    free-trial: Prueba gratuita
   fr:
-    -
-      name: Mode de fonctionnement
-      url: '/fr/mode-de-fonctionnement'
-    -
-      name: Contact
-      url: '/fr/contact'
+    how-it-works: Mode de fonctionnement
+    free-trial: Essai gratuit
   pt:
-    -
-      name: Como funciona
-      url: '/pt/como-funciona'
-    -
-      name: Contatos
-      url: '/pt/contatos'
+    how-it-works: Como funciona
+    free-trial: Teste grátis
   ru:
-    -
-      name: Как это работает
-      url: '/ru/как-это-работает'
-    -
-      name: Связи
-      url: '/ru/связи'
+    how-it-works: Как это работает
+    free-trial: Бесплатная пробная
 
 # Build settings
 markdown: kramdown
