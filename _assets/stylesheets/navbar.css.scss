@@ -8,13 +8,13 @@ $navbar-height: 81px;
 }
 
 .navbar-brand {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   text-transform: uppercase;
   max-width: 280px;
 }
 
 .oswald {
-  font-family: "Oswald";
+  font-family: $font-family-oswald;
   font-weight: 300;
   text-transform: uppercase;
 }
