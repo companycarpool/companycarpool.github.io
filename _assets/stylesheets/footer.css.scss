@@ -9,6 +9,16 @@
 
 footer {
   a {
+    display: inline-block;
+    padding: 6px 12px;
     color: $gray !important;
+  }
+}
+
+@media (min-width: #{$screen-sm-min}) {
+  footer {
+    a {
+      padding: 0;
+    }
   }
 }
