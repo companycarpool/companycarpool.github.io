@@ -41,21 +41,27 @@ localized_pages:
 navbar_links:
   en:
     how-it-works: How It Works
+    demo: Demo
     free-trial: Free Trial
   it:
     how-it-works: Come Funziona
+    demo: Demo
     free-trial: Prova gratuita
   es:
     how-it-works: Cómo funciona
+    demo: Demo
     free-trial: Prueba gratuita
   fr:
     how-it-works: Mode de fonctionnement
+    demo: Demo
     free-trial: Essai gratuit
   pt:
     how-it-works: Como funciona
+    demo: Demo
     free-trial: Teste grátis
   ru:
     how-it-works: Как это работает
+    demo: Demo
     free-trial: Бесплатная пробная
 
 # Build settings
@@ -63,7 +69,10 @@ markdown: kramdown
 permalinks: pretty
 
 # Gems
-gems: ['jekyll-assets', 'jekyll-minify-html', 'jekyll-sitemap']
+gems:
+  - jekyll-assets
+  - jekyll-minify-html
+  - jekyll-sitemap
 
 #
 # Plugin: jekyll-assets

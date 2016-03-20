@@ -18,6 +18,15 @@ label,
   @include transition(background-color .35s ease, border-color .35s ease);
 }
 
+.btn-outline {
+  @include button-variant(white, transparent, white);
+  box-shadow: none;
+
+  &.btn-lg {
+    border-width: 2px;
+  }
+}
+
 .companycarpool-logo,
 .companycarpool-logo-big {
   position: relative;
