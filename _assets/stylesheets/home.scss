@@ -15,25 +15,30 @@
     margin: 0;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: -1px;
+    text-align: center;
   }
 
   h1 {
     font-size: ceil($font-size-base * 1.25);
+  }
+
+  .title-md {
+    display: block;
     letter-spacing: 1px;
   }
 
-  .header-dashed {
+  .title-dashed {
     display: inline-block;
     margin: 10px 0;
     border-top: 1px dashed $white;
     border-bottom: 1px dashed $white;
     padding: 5px 0 10px;
     line-height: 1.1;
+    letter-spacing: -1px;
     font-size: ceil($font-size-base * 3.25);
   }
 
-  .header-small {
+  .title-sm {
     display: block;
     font-size: ceil($font-size-base * 1.7);
     letter-spacing: 0;
@@ -121,11 +126,11 @@
       font-size: ceil($font-size-base * 1.75);
     }
 
-    .header-dashed {
+    .title-dashed {
       font-size: ceil($font-size-base * 4.7);
     }
 
-    .header-small {
+    .title-sm {
       font-size: ceil($font-size-base * 2.25);
     }
   }
@@ -139,11 +144,11 @@
       font-size: ceil($font-size-base * 2.75);
     }
 
-    .header-dashed {
+    .title-dashed {
       font-size: ceil($font-size-base * 5.7);
     }
 
-    .header-small {
+    .title-sm {
       font-size: ceil($font-size-base * 3.25);
     }
   }
