@@ -1,20 +1,20 @@
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {% if page.homepage %}
   <title>{{ page.title }}</title>
   {% else %}
   <title>{% if page.title %}{{ page.title | append: ' | ' }}{{ site.name }}{% else %}{{ site.title }}{% endif %}</title>
   {% endif %}
 
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="author" content="{{ site.author.name }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
   {% for localized_page in site.localized_pages[page.localized_name] %}
-    <link rel="alternate" href="{{ localized_page.url | prepend: site.url }}" hreflang="{{localized_page.language}}" />
+  <link rel="alternate" href="{{ localized_page.url | prepend: site.url }}" hreflang="{{localized_page.language}}" />
   {% endfor %}
 
   {% stylesheet application %}
