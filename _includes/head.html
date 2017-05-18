@@ -22,8 +22,12 @@
 
   {% include open_graph.html %}
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% asset_path apple-touch-icon-precomposed.png %}">
+  <!-- Webapp -->
+  <link href="/manifest.json" rel="manifest" />
+  <meta content="C. Carpool" name="application-name" />
+  <meta content="#2980b9" name="theme-color" />
+
+  <link href="{% asset_path apple-touch-icon.png %}" rel="apple-touch-icon" sizes="180x180" />
 
   <!-- HTML5 shim IE8 support of HTML5 elements -->
   <!--[if lt IE 9]>
