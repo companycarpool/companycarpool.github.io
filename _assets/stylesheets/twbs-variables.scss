@@ -86,6 +86,12 @@ $btn-default-color: $white;
 $btn-default-bg: $flat-ui-green-sea;
 $btn-default-border: darken($btn-default-bg, 5%);
 
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+$grid-float-breakpoint: 992px;
+
 // Navbar
 // -------------------------
 
