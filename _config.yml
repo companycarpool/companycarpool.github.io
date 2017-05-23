@@ -43,26 +43,32 @@ navbar_links:
     how-it-works: How It Works
     demo: Demo
     free-trial: Free Trial
+    toggle-navigation: Toggle navigation
   it:
     how-it-works: Come Funziona
     demo: Demo
     free-trial: Prova gratuita
+    toggle-navigation: Menù di navigazione
   es:
     how-it-works: Cómo funciona
     demo: Demo
     free-trial: Prueba gratuita
+    toggle-navigation: Menú de navegación
   fr:
     how-it-works: Mode de fonctionnement
     demo: Demo
     free-trial: Essai gratuit
+    toggle-navigation: Menu de navigation
   pt:
     how-it-works: Como funciona
     demo: Demo
     free-trial: Teste grátis
+    toggle-navigation: Menu de navegação
   ru:
     how-it-works: Как это работает
     demo: Demo
     free-trial: Бесплатная пробная
+    toggle-navigation: Меню навигации
 
 # Build settings
 markdown: kramdown
