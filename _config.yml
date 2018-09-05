@@ -74,8 +74,8 @@ navbar_links:
 markdown: kramdown
 permalinks: pretty
 
-# Gems
-gems:
+# Plugins
+plugins:
   - jekyll-assets
   - jekyll-minify-html
   - jekyll-sitemap
@@ -87,7 +87,7 @@ assets:
   compress:
     css: true
     js: true
-  prefix: "/assets"
+  destination: "/assets"
   assets:
     - "*.png"
     - "bundle.css"

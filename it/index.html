@@ -18,12 +18,12 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-6 small-featurette">
-      <img src="{{'carpooling.jpg' | asset_path}}" class="img-responsive center-block" alt="Carpooling">
+      <img src="{% asset carpooling.jpg @path %}" class="img-responsive center-block" alt="Carpooling">
       <h3>Aumenta la produttività dei dipendenti</h3>
       <p>I dipendenti che fanno carpooling accumulano meno stress, sviluppano sinergie e sono più fedeli all'impresa.</p>
     </div>
     <div class="col-sm-6 small-featurette">
-      <img src="{{'iso14001.jpg' | asset_path}}" class="img-responsive center-block" alt="ISO-14001">
+      <img src="{% asset iso14001.jpg @path %}" class="img-responsive center-block" alt="ISO-14001">
       <h3>Un impegno ambientale riconoscibile</h3>
       <p>Meno automobili significa meno emissioni di Co<sub>2</sub>. Aiuto concreto all'ambiente e ritorno d'immagine aziendale.</p>
     </div>
@@ -39,17 +39,17 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
-      <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
+      <img src="{% asset route-buffer.png @path %}" class="img-responsive center-block" alt="Route Buffer">
       <h3>Risultati migliori</h3>
       <p>I tradizionali sistemi di carpooling cercano risultati solo in prossimità dei punti definiti dall'utente. Il nostro sistema prende in considerazione l'intero itinerario.</p>
     </div>
     <div class="col-sm-4 small-featurette">
-      <img src="{{'privacy.jpg' | asset_path}}" class="img-responsive center-block" alt="Privacy">
+      <img src="{% asset privacy.jpg @path %}" class="img-responsive center-block" alt="Privacy">
       <h3>Rispetto della privacy</h3>
       <p>Per garantire la riservatezza degli utenti, il sistema approssima le posizioni sulla mappa e nasconde gli indirizzi di casa, mostrando solo e-mail e indirizzo di lavoro.</p>
     </div>
     <div class="col-sm-4 small-featurette">
-      <img src="{{'company-carpool.jpg' | asset_path}}" class="img-responsive center-block" alt="Company Carpool">
+      <img src="{% asset company-carpool.jpg @path %}" class="img-responsive center-block" alt="Company Carpool">
       <h3>Piattaforma condivisa</h3>
       <p>Condividendo gli itinerari dei dipendenti tra tutte le aziende che utilizzano il nostro servizio, le possibilità di formare equipaggi aumentano notevolmente.</p>
     </div>
@@ -66,12 +66,12 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-6 small-featurette">
-      <img alt="Crea il percorso quotidiano" src="{{'how-it-works-1.it-IT.png' | asset_path}}" class="howitworks-image">
+      <img alt="Crea il percorso quotidiano" src="{% asset how-it-works-1.it-IT.png @path %}" class="howitworks-image">
       <h2>1. Crea il percorso quotidiano</h2>
       <p>Inserisci l'indirizzo di partenza, l'indirizzo di lavoro e l'orario lavorativo.</p>
     </div>
     <div class="col-sm-6 small-featurette">
-    <img alt="Guarda i risultati" src="{{'how-it-works-2.it-IT.png' | asset_path}}" class="howitworks-image">
+    <img alt="Guarda i risultati" src="{% asset how-it-works-2.it-IT.png @path %}" class="howitworks-image">
     <h2>2. Guarda i risultati</h2>
     <p>L'indirizzo e-mail e un numero di telefono opzionale permettono ai dipendenti di accordarsi.</p>
     </div>

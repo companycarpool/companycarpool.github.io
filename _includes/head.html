@@ -17,7 +17,7 @@
   <link rel="alternate" href="{{ localized_page.url | prepend: site.url }}" hreflang="{{localized_page.language}}" />
   {% endfor %}
 
-  {% stylesheet application %}
+  {% asset application.css %}
   <link href="https://fonts.googleapis.com/css?family=Oswald:300" rel="stylesheet" type="text/css" media="all">
 
   {% include open_graph.html %}
@@ -27,7 +27,7 @@
   <meta content="C. Carpool" name="application-name" />
   <meta content="#2980b9" name="theme-color" />
 
-  <link href="{% asset_path apple-touch-icon.png %}" rel="apple-touch-icon" sizes="180x180" />
+  <link href="{% asset apple-touch-icon.png @path %}" rel="apple-touch-icon" sizes="180x180" />
 
   <!-- HTML5 shim IE8 support of HTML5 elements -->
   <!--[if lt IE 9]>

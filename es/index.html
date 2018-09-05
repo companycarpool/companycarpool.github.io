@@ -18,12 +18,12 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-6 small-featurette">
-      <img src="{{'carpooling.jpg' | asset_path}}" class="img-responsive center-block" alt="Carpooling">
+      <img src="{% asset carpooling.jpg @path %}" class="img-responsive center-block" alt="Carpooling">
       <h3>Aumentar la productividad y la moral de los empleados</h3>
       <p>Los empleados que comparten auto tienen menos estrés causado por el viaje, desarrollan sinergias y lealtad hacia la empresa.</p>
     </div>
     <div class="col-sm-6 small-featurette">
-      <img src="{{'iso14001.jpg' | asset_path}}" class="img-responsive center-block" alt="ISO-14001">
+      <img src="{% asset iso14001.jpg @path %}" class="img-responsive center-block" alt="ISO-14001">
       <h3>Empresa ambientalmente responsable</h3>
       <p>Menor cantidad de vehículos en movimiento significa menos emisiones de Co<sub>2</sub>. Una ayuda tangible para el medio ambiente que mejorará la imagen de su empresa.</p>
     </div>
@@ -39,17 +39,17 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-4 small-featurette">
-      <img src="{{'route-buffer.png' | asset_path}}" class="img-responsive center-block" alt="Route Buffer">
+      <img src="{% asset route-buffer.png @path %}" class="img-responsive center-block" alt="Route Buffer">
       <h3>Mejores resultados</h3>
       <p>Los servicios tradicionales de carpooling calculan las coincidencias cercanas a su domicilio y los puntos de recojo. Nuestro sistema encuentra las coincidencias presentes en toda la ruta.</p>
     </div>
     <div class="col-sm-4 small-featurette">
-      <img src="{{'privacy.jpg' | asset_path}}" class="img-responsive center-block" alt="Privacy">
+      <img src="{% asset privacy.jpg @path %}" class="img-responsive center-block" alt="Privacy">
       <h3>Respeto de la privacidad</h3>
       <p>La privacidad de los empleados se respeta haciendo una aproximación de la ubicación del domicilio en el mapa pero sin mostrar la dirección. La única información disponible es la dirección de correo electrónico y la dirección de trabajo.</p>
     </div>
     <div class="col-sm-4 small-featurette">
-      <img src="{{'company-carpool.jpg' | asset_path}}" class="img-responsive center-block" alt="Company Carpool">
+      <img src="{% asset company-carpool.jpg @path %}" class="img-responsive center-block" alt="Company Carpool">
       <h3>Plataforma compartida</h3>
       <p>Al compartir las rutas de los empleados con todas las empresas que utilizan nuestro servicio, aumentan las posibilidades de formar grupos de carpooling. Esta es una gran ventaja con respecto a las plataformas cerradas.</p>
     </div>
@@ -66,12 +66,12 @@ localized_name: root
 <div class="container">
   <div class="row">
     <div class="col-sm-6 small-featurette">
-      <img alt="Establecer ruta diaria" src="{{'how-it-works-1.en-US.png' | asset_path}}" class="howitworks-image">
+      <img alt="Establecer ruta diaria" src="{% asset how-it-works-1.en-US.png @path %}" class="howitworks-image">
       <h3>1. Establecer ruta diaria</h3>
       <p>Ingresar dirección de inicio, dirección de trabajo y horario de trabajo. Evitar formatos complejos.</p>
     </div>
     <div class="col-sm-6 small-featurette">
-      <img alt="Buscar coincidencias" src="{{'how-it-works-2.en-US.png' | asset_path}}" class="howitworks-image">
+      <img alt="Buscar coincidencias" src="{% asset how-it-works-2.en-US.png @path %}" class="howitworks-image">
       <h3>2. Buscar coincidencias</h3>
       <p>La dirección de correo electrónico y el número de teléfono opcional les permite a los empleados estar en contacto.</p>
     </div>

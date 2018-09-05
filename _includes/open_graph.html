@@ -16,9 +16,9 @@
 {% endif %}
 
 {% if page.image %}
-<meta content="{{ page.image | asset_path }}" property="og:image">
+<meta content="{% asset {{page.image}} @path %}" property="og:image">
 {% else %}
-<meta content="{{ 'company-carpool.jpg' | asset_path }}" property="og:image">
+<meta content="{% asset company-carpool.jpg @path %}" property="og:image">
 {% endif %}
 
 {% if page.categories %}
