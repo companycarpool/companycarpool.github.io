@@ -1,7 +1,13 @@
 @import "twbs-variables";
 @import "twbs/bootstrap/mixins";
 
+.has-shadow {
+  text-shadow: 0.2em 0.2em fade-out(#000, .85);
+}
+
 .home-jumbotron {
+  @extend .has-shadow;
+
   padding: 40px 20px;
   margin-bottom: 30px;
   border-radius: 0;
@@ -25,6 +31,7 @@
   .title-md {
     display: block;
     letter-spacing: 1px;
+    text-shadow: 0.05em 0.05em fade-out(#000, .85);
   }
 
   .title-dashed {
@@ -42,6 +49,7 @@
     display: block;
     font-size: ceil($font-size-base * 1.7);
     letter-spacing: 0;
+    text-shadow: 0.05em 0.05em fade-out(#000, .85);
   }
 }
 
@@ -98,6 +106,8 @@
 }
 
 .featurette-text-divider {
+  @extend .has-shadow;
+
   margin-bottom: $line-height-computed;
   background-color: $flat-ui-green-sea;
 
