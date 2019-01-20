@@ -1,6 +1,6 @@
-#= require twbs/bootstrap/transition.js
 #= require twbs/bootstrap/collapse.js
 #= require twbs/bootstrap/dropdown.js
+#= require twbs/bootstrap/transition.js
 #= require jquery.scrollTo.js
 #= require_tree .
 
