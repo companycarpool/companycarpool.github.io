@@ -1,7 +1,6 @@
 #= require twbs/bootstrap/collapse.js
 #= require twbs/bootstrap/dropdown.js
 #= require twbs/bootstrap/transition.js
-#= require jquery.scrollTo.js
 #= require_tree .
 
 $(document).on 'click', '.navbar-collapse.in', (e) ->
@@ -10,4 +9,6 @@ $(document).on 'click', '.navbar-collapse.in', (e) ->
 
 $(document).on 'click', '.scrollto-j', (e) ->
   e.preventDefault()
-  $(document).scrollTo $($(this).attr('href')), 'ease'
+  $([document.documentElement, document.body]).animate(
+    scrollTop: $($(this).attr('href')).offset().top
+  , 250, 'swing')
