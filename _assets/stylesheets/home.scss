@@ -35,8 +35,7 @@
 
   .title-dashed {
     display: inline-block;
-    margin: 10px 0;
-    padding: 5px 0 15px;
+    margin: 10px 0 20px;
     line-height: 1.1;
     letter-spacing: -1px;
     font-size: ceil($font-size-base * 3.25);
@@ -109,7 +108,7 @@
   background-color: $flat-ui-green-sea;
 
   h4 {
-    margin: 20px 0;
+    margin: 10px 0 15px;
     font-size: ceil($font-size-base * 2.7);
     font-family: $font-family-oswald;
     font-weight: 300;
