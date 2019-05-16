@@ -9,7 +9,6 @@ $navbar-height: 81px;
 
 .navbar-brand {
   font-family: $font-family-oswald;
-  text-transform: uppercase;
   max-width: 280px;
 }
 
@@ -44,7 +43,6 @@ $navbar-height: 81px;
 .oswald {
   font-family: $font-family-oswald;
   font-weight: 300;
-  text-transform: uppercase;
 }
 
 @media(min-width: #{$grid-float-breakpoint}) {
@@ -73,7 +71,6 @@ $navbar-height: 81px;
         > a {
           margin-top: 15px;
           margin-bottom: 15px;
-          text-transform: uppercase;
           font-weight: bold;
         }
 

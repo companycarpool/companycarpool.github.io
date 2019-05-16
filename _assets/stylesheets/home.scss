@@ -20,7 +20,6 @@
   h2 {
     margin: 0;
     line-height: 1;
-    text-transform: uppercase;
     text-align: center;
   }
 
@@ -37,9 +36,7 @@
   .title-dashed {
     display: inline-block;
     margin: 10px 0;
-    border-top: 1px dashed $white;
-    border-bottom: 1px dashed $white;
-    padding: 5px 0 10px;
+    padding: 5px 0 15px;
     line-height: 1.1;
     letter-spacing: -1px;
     font-size: ceil($font-size-base * 3.25);
@@ -117,7 +114,6 @@
     font-family: $font-family-oswald;
     font-weight: 300;
     text-align: center;
-    text-transform: uppercase;
     color: white;
   }
 }
