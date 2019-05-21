@@ -28,7 +28,7 @@ GEM
     extras (0.3.0)
       forwardable-extended (~> 2.5)
     fastimage (2.1.5)
-    ffi (1.10.0)
+    ffi (1.11.1)
     forwardable-extended (2.6.0)
     html_press (0.8.2)
       htmlentities
