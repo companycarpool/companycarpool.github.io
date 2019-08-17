@@ -9,5 +9,5 @@ gem 'jekyll-assets', '~> 3.0'
 gem 'jekyll-minify-html', '~> 1.1'
 gem 'jekyll-sitemap', '~> 1.3'
 
-gem 'autoprefixer-rails', '~> 9.5'
+gem 'autoprefixer-rails', '~> 9.6'
 gem 'coffee-script', '~> 2.4'
