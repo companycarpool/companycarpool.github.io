@@ -1,13 +1,21 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
 gem 'rake', '~> 12.3'
 
 gem 'jekyll', '~> 3.8'
-gem 'jekyll-assets', '~> 3.0'
-gem 'jekyll-minify-html', '~> 1.1'
-gem 'jekyll-sitemap', '~> 1.3'
+
+gem 'sprockets', '4.0.0.beta8'
+gem 'uglifier', '~> 4.1'
+
+group :jekyll_plugins do
+  gem 'jekyll-assets', github: 'envygeeks/jekyll-assets'
+  gem 'jekyll-sitemap', '~> 1.3'
+end
 
 gem 'autoprefixer-rails', '~> 9.6'
 gem 'coffee-script', '~> 2.4'

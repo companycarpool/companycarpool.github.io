@@ -77,21 +77,16 @@ permalinks: pretty
 # Plugins
 plugins:
   - jekyll-assets
-  - jekyll-minify-html
   - jekyll-sitemap
 
 #
 # Plugin: jekyll-assets
 #
 assets:
-  compress:
-    css: true
-    js: true
+  source_maps: false
   destination: "/assets"
-  assets:
-    - "*.png"
-    - "bundle.css"
-  digest: true
+  compression: true
+  gzip: true
   sources:
     - _assets/images
     - _assets/javascripts

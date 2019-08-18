@@ -1,3 +1,20 @@
+GIT
+  remote: https://github.com/envygeeks/jekyll-assets.git
+  revision: ce5c8cc43df9911e0788f06423a27375ee67c00f
+  specs:
+    jekyll-assets (4.0.0.alpha)
+      activesupport (~> 5.0)
+      execjs (~> 2.7)
+      extras (~> 0.2)
+      fastimage (~> 2.0, >= 1.8)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-sanity (~> 1.2)
+      liquid-tag-parser (~> 1.0)
+      nokogiri (~> 1.10)
+      pathutil (~> 0.16)
+      sassc (>= 1.11, < 3.0)
+      sprockets (~> 4.0.beta7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -16,10 +33,6 @@ GEM
     coffee-script-source (1.12.2)
     colorator (1.1.0)
     concurrent-ruby (1.1.5)
-    css_press (0.3.2)
-      csspool-st (= 3.1.2)
-      json
-    csspool-st (3.1.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -30,11 +43,6 @@ GEM
     fastimage (2.1.5)
     ffi (1.11.1)
     forwardable-extended (2.6.0)
-    html_press (0.8.2)
-      htmlentities
-      multi_css (>= 0.1.0)
-      multi_js (>= 0.1.0)
-    htmlentities (4.3.4)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -51,20 +59,6 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-assets (3.0.12)
-      activesupport (~> 5.0)
-      execjs (~> 2.7)
-      extras (~> 0.2)
-      fastimage (~> 2.0, >= 1.8)
-      jekyll (>= 3.5, < 4.0)
-      jekyll-sanity (~> 1.2)
-      liquid-tag-parser (~> 1.0)
-      nokogiri (~> 1.8)
-      pathutil (~> 0.16)
-      sprockets (>= 3.3, < 4.1.beta)
-    jekyll-minify-html (1.1.0)
-      html_press (~> 0.8.2)
-      jekyll (>= 0.12)
     jekyll-sanity (1.2.0)
       jekyll (~> 3.1)
     jekyll-sass-converter (1.5.2)
@@ -73,7 +67,6 @@ GEM
       jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
-    json (2.2.0)
     kramdown (1.17.0)
     liquid (4.0.3)
     liquid-tag-parser (1.9.0)
@@ -86,10 +79,6 @@ GEM
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
     minitest (5.11.3)
-    multi_css (0.1.0)
-      css_press
-    multi_js (0.1.0)
-      uglifier (~> 2)
     nokogiri (1.10.4)
       mini_portile2 (~> 2.4.0)
     pathutil (0.16.2)
@@ -108,15 +97,17 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    sprockets (3.7.2)
+    sassc (2.0.1)
+      ffi (~> 1.9)
+      rake
+    sprockets (4.0.0.beta8)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     thread_safe (0.3.6)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
-    uglifier (2.7.2)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
+    uglifier (4.1.20)
+      execjs (>= 0.3.0, < 3)
 
 PLATFORMS
   ruby
@@ -125,10 +116,11 @@ DEPENDENCIES
   autoprefixer-rails (~> 9.6)
   coffee-script (~> 2.4)
   jekyll (~> 3.8)
-  jekyll-assets (~> 3.0)
-  jekyll-minify-html (~> 1.1)
+  jekyll-assets!
   jekyll-sitemap (~> 1.3)
   rake (~> 12.3)
+  sprockets (= 4.0.0.beta8)
+  uglifier (~> 4.1)
 
 RUBY VERSION
    ruby 2.6.3p62
