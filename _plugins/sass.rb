@@ -1,3 +1,5 @@
 # frozen_string_literal: true
 
-Sass::Script::Number.precision = 9
+require 'sass'
+
+Sass::Script::Number.precision = 10

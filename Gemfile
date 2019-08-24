@@ -7,8 +7,10 @@ ruby '2.6.3'
 
 gem 'rake', '~> 12.3'
 
-gem 'jekyll', '~> 3.8'
+gem 'jekyll', '~> 4.0'
+gem 'jekyll-sanity', github: 'envygeeks/jekyll-sanity'
 
+gem 'sass', '~> 3.7'
 gem 'sprockets', '4.0.0.beta8'
 gem 'uglifier', '~> 4.1'
 
