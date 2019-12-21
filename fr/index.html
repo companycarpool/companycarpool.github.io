@@ -94,21 +94,9 @@ localized_name: root
         <small>Aucune carte de crédit requise, aucune obligation. Il suffit de remplir le formulaire ci-dessous et nous vous contacterons!</small>
       </p>
 
-      <form action="https://getsimpleform.com/messages?form_api_token=592a2562c9813ece5efbe5ef9d30b3f4" method="post">
-        <input type="hidden" name="redirect_to" value="{{ '/fr/merci.html' | prepend: site.url }}">
-        <div class="form-group">
-          <label for="contact_e">Adresse email</label>
-          <input class="form-control input-lg" id="contact_e" name="contact_e" type="email" autocomplete="email" required>
-          <p class="help-block">S'il vous plaît utiliser votre adresse e-mail d'entreprise</p>
-        </div>
-        <div class="form-group">
-          <label for="contact_o">Organisation</label>
-          <input class="form-control input-lg" id="contact_o" name="contact_o" size="30" type="text" autocomplete="organization" required>
-        </div>
-        <div class="form-group">
-          <button class="btn btn-block btn-lg btn-primary" name="button" type="submit">Demande d'essai gratuite</button>
-        </div>
-      </form>
+      <a href="mailto:info@diowa.com?subject=Information+about+Company+Carpool" class="btn btn-primary btn-lg btn-block">
+        Envoyez-nous un e-mail
+      </a>
 
       <hr>
 
