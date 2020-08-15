@@ -3,15 +3,15 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.7.1'
 
 gem 'rake', '~> 13.0'
 
-gem 'jekyll', '~> 4.0'
-gem 'jekyll-sanity', github: 'envygeeks/jekyll-sanity'
+gem 'jekyll', '~> 4.1'
+gem 'jekyll-sanity', '~> 1.6'
 
-gem 'sass', '~> 3.7'
-gem 'sprockets', '4.0.0.beta8'
+gem 'sassc', '~> 2.4'
+gem 'sprockets', '4.0'
 gem 'uglifier', '~> 4.2'
 
 group :jekyll_plugins do
@@ -19,5 +19,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
 end
 
-gem 'autoprefixer-rails', '~> 9.7'
+gem 'autoprefixer-rails', '~> 9.8'
 gem 'coffee-script', '~> 2.4'
