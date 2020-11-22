@@ -3,7 +3,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '2.7.2'
 
 gem 'rake', '~> 13.0'
 
@@ -19,5 +19,5 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap', '~> 1.4'
 end
 
-gem 'autoprefixer-rails', '~> 9.8'
+gem 'autoprefixer-rails', '~> 10.0'
 gem 'coffee-script', '~> 2.4'
