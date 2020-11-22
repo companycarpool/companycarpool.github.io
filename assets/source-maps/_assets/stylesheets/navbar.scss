@@ -1,0 +1,91 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+$navbar-height: 81px;
+
+.navbar {
+  border-bottom: 1px solid $hr-border;
+}
+
+.navbar-brand {
+  font-family: $font-family-oswald;
+  max-width: 280px;
+}
+
+.navbar-toggle {
+  .icon-bar {
+    // same duration as bootstrap's collapse
+    transition: all .35s ease-in-out;
+    backface-visibility: hidden;
+  }
+
+  .icon-bar--top {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: 17% 200%;
+  }
+
+  .icon-bar--middle {
+    transform: rotate3d(0, 1, 0, 90deg);
+  }
+
+  .icon-bar--bottom {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transform-origin: 17% -100%;
+  }
+
+  &.collapsed {
+    .icon-bar {
+      transform: rotate3d(0, 0, 0, 0deg);
+    }
+  }
+}
+
+.oswald {
+  font-family: $font-family-oswald;
+  font-weight: 300;
+}
+
+@media(min-width: #{$grid-float-breakpoint}) {
+  body {
+    padding-top: $navbar-height;
+  }
+
+  .navbar {
+    height: $navbar-height;
+
+    .navbar-brand {
+      margin-top: 8px;
+      margin-bottom: 8px;
+      max-width: 280px;
+      line-height: 34px;
+      font-size: 28px;
+      letter-spacing: -1px;
+    }
+
+    .navbar-toggle {
+      padding: 22px 13px;
+    }
+
+    .navbar-nav {
+      > li {
+        > a {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          font-weight: bold;
+        }
+
+        > .dropdown-menu {
+          margin-top: -15px;
+        }
+
+        & + li {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .anchor {
+    top: -($navbar-height);
+  }
+}
