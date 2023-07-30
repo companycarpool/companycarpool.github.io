@@ -1,0 +1,34 @@
+@import "twbs-variables";
+@import "twbs/bootstrap/mixins";
+
+.footer-container {
+  margin-top: $line-height-computed;
+  border-top: 1px solid $hr-border;
+  padding: $line-height-computed 0;
+}
+
+footer {
+  a {
+    display: inline-block;
+    padding: 6px 12px;
+    color: $gray !important;
+  }
+}
+
+.list-footer {
+  margin-left: -12px;
+
+  > li {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+@media (min-width: #{$screen-sm-min}) {
+  footer {
+    a {
+      padding: 0;
+    }
+  }
+}
